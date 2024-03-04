@@ -12,26 +12,31 @@
     <!-- Your website content will be hidden initially -->
     <div id="content" style="display: none;">
         <header>
-            <img src="../images\MMCM_Logo.png" alt="Header Image">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="button">Search</button>
-            <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+            <div class="header-container">
+                <img src="../images\MMCM_Logo.png" alt="Header Image">
+                <nav>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="prog.html">PROGRAMS</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="job.html">JOB HIRING</a></li>
+                            <li><a href="profile.html">MY PROFILE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                    </form>
+                </div>
+                
+                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
-
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="prog.html">PROGRAMS</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="job.html">JOB HIRING</a></li>
-                    <li><a href="profile.html">MY PROFILE</a></li>
-                </ul>
-            </div>
-        </nav>
-
+    
 
         <main>
             <section>

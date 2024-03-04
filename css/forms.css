@@ -1,0 +1,59 @@
+.box-form .right {
+    padding: 30px 60px 40px; /* Increased padding on top */
+    overflow: hidden;
+    width: calc(100% - 650px); /* Adjust the width as needed */
+}
+
+main h5 {
+    padding: 40px 60px 5px; /* Padding adjusted */
+    font-size: 6vmax;
+    line-height: 0;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px; /* Decreased margin bottom */
+    margin-top: 0; /* Removed margin top */
+}
+
+.box-form .right h6 {
+    font-size: 1.5vmax; /* Increased font size */
+    color: #B0B3B9;
+    font-weight: 100;
+    margin-bottom: 30px; /* Maintain space after the subheading */
+}
+
+.box-form .right p {
+    font-size: 16px; /* Maintain font size */
+    color: #B0B3B9;
+    margin-bottom: 30px; /* Maintain space after the paragraph */
+}
+
+.box-form .right .inputs {
+    overflow: hidden;
+    margin-bottom: 30px; /* Maintain space between inputs */
+}
+
+.box-form .right .input-group {
+    margin: 20px; /* Add space between label-input pairs */
+}
+
+.box-form .right input {
+    width: 100%;
+    padding: 15px; /* Maintain padding */
+    font-size: 18px; /* Maintain font size */
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+}
+
+.box-form .right button {
+    width: 100%; /* Set the width to 100% */
+    color: #fff;
+    font-size: 18px; /* Maintain font size */
+    padding: 15px 35px; /* Maintain padding */
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background-color: #e50019;
+    transition: box-shadow 0.3s, background-color 0.3s; /* Added transition */
+    margin-top: -100px; /* Adjust the margin-top value as needed */
+}

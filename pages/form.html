@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/forms.css">
     <title>Your Profile</title>
     <body>
 
@@ -13,45 +14,60 @@
         <div id="content" style="display: none;">
     
             <header>
-                <img src="../images\MMCM_Logo.png" alt="Header Image">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button type="button">Search</button>
-                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                <div class="header-container">
+                    <img src="../images\MMCM_Logo.png" alt="Header Image">
+                    <nav>
+                        <div class="navbar">
+                            <ul>
+                                <li><a href="home.html">HOME</a></li>
+                                <li><a href="prog.html">PROGRAMS</a></li>
+                                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                <li><a href="job.html">JOB HIRING</a></li>
+                                <li><a href="profile.html">MY PROFILE</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                            <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                        </form>
+                    </div>
+                    
+                    <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
                 </div>
             </header>
-    
-            <nav>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="home.html">HOME</a></li>
-                        <li><a href="prog.html">PROGRAMS</a></li>
-                        <li><a href="portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="job.html">JOB HIRING</a></li>
-                        <li><a href="profile.html">MY PROFILE</a></li>
-                    </ul>
-                </div>
-            </nav>
+        
     
             <main>
+                <h5>Your Profile</h5>
                 <section>
-                    <h2>THIS IS YOUR PROFILE.</h2>
-                    <p>WAHAHAHHA MMCM</p>
-                    <form>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-    
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
-    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-    
-                        <button type="submit" class="submit-button">Submit</button>
+                    <form class="box-form">
+                        <div class="right">
+                            <div class="inputs">
+                                <div class="input-group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
                     </form>
+                    
+                    
                 </section>
             </main>
     
