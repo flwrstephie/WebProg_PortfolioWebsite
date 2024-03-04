@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>MMCM || PORTFOLIO</title>
 </head>
+<body>
 
+    <!-- Your website content will be hidden initially -->
     <div id="content" style="display: none;">
-
         <header>
-            <img src="images\MMCM_Logo.png" alt="Header Image">
+            <img src="../images\MMCM_Logo.png" alt="Header Image">
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button type="button">Search</button>
@@ -33,7 +34,7 @@
 
         <main>
             <section>
-                <h2>THIS IS PROGRAMS.</h2>
+                <h2>THIS IS JOB HIRING.</h2>
                 <p>WAHAHAHHA MMCM</p>
             </section>
         </main>
@@ -50,11 +51,12 @@
         const isLoggedIn = /* Add your logic to check login status */ true;
 
         // Show/hide content based on login status
-        if (isLoggedIn) {
-            document.getElementById('content').style.display = 'block';
-        } else {
+        if (!isLoggedIn) {
             // Redirect to the login page if not logged in
             window.location.href = 'login.html';
+        } else {
+            // Show the content if logged in
+            document.getElementById('content').style.display = 'block';
         }
     </script>
 

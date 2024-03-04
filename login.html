@@ -4,23 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
+
     <title>Login | MMCM || PORTFOLIO</title>
 </head>
 <body>
 
-    <!-- Login page -->
-    <div class="login-screen">
-        <form id="loginForm">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Mapua Malayan Colleges Mindanao</h1>
+		<p>Excellence and Relevance</p>
+		</div>
+	</div>
+	
+        <div class="right">
+            <h5>Login</h5>
+            <div class="inputs">
+                <input type="text" id="username" placeholder="username" name="username" required>
+                <br>
+                <input type="password" id="password" placeholder="password" name="password" required>
+            </div>
+            
             <button type="button" onclick="login()">Login</button>
-        </form>
+            <div class="forget-password">
+                <p>forget password?</p>
+            </div>
+        </div>
+    
+	
     </div>
 
+ 
     <!-- JavaScript to handle login and redirect -->
     <script>
         function login() {
@@ -31,7 +47,7 @@
             // Check if credentials are correct
             if (username === 'admin' && password === 'admin123') {
                 // Redirect to the main page (change the URL accordingly)
-                window.location.href = 'index.html';
+                window.location.href = 'pages/home.html';
             } else {
                 alert('Invalid username or password. Please try again.');
             }
