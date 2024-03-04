@@ -1,31 +1,57 @@
-/* styles.css */
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
 
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: lighter;
 }
+
 
 header {
     text-align: center;
     display: flex;
     justify-content: space-between; /* Align items on the same line with space in between */
     align-items: center; /* Center items vertically */
-    margin-left: 10em;
-    margin-right: 10em;
+    margin: auto;
+    background-color: #fff;
 }
 
 header img {
     max-width: 300px;
     height: auto;
+    margin-left: 50px;
 
 }
 
 .header-container {
     text-align: center;
-    padding: 1em;
     background-color: #333;
     color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#admin-logo {
+    display: relative;
+    width: 35px; /* Adjust the maximum width as needed */
+    height: auto;
+    padding-left: 10px;
+    padding-right: 50px;
 }
 
 .search-bar {
@@ -41,8 +67,9 @@ header img {
 }
 
 .search-bar button {
+    font-family: 'Montserrat-Bold';
     padding: 8px 15px;
-    background-color: #4CAF50;
+    background-color: #4c4eaf;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -50,10 +77,11 @@ header img {
 }
 
 .search-bar button:hover {
-    background-color: #45a049;
+    background-color: #c14242;
 }
 
 nav {
+    font-family: 'Montserrat-Bold' ;
     background-color: #eee;
     padding: 10px;
 }
@@ -83,14 +111,21 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: #333;
+    color: #3255ff;
 }
 
 main {
     padding: 20px;
 }
-
+.school-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Set a negative z-index to place it behind other content */
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -99,4 +134,45 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Styles for the left-aligned form */
+.left-column {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+}
+
+.left-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column label {
+    margin-bottom: 10px;
+}
+
+.left-column input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-column .submit-button {
+    font-family: 'Montserrat-Bold';
+    padding: 8px 15px;
+    background-color: #4c4eaf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-column .submit-button:hover {
+    background-color: #c14242;
 }

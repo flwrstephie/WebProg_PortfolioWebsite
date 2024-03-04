@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
     <title>MMCM || PORTFOLIO</title>
 </head>
@@ -17,6 +18,7 @@
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button type="button">Search</button>
+            <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
 
@@ -34,6 +36,7 @@
 
         <main>
             <section>
+                <img src = "../images/MMCM_Building.jpeg" class="school-bg" alt="BG">
                 <h2>THIS IS HOME.</h2>
                 <p>WAHAHAHHA MMCM</p>
             </section>
@@ -58,6 +61,10 @@
             // Show the content if logged in
             document.getElementById('content').style.display = 'block';
         }
+        document.getElementById('admin-logo').addEventListener('click', function () {
+        // Redirect to the form page
+        window.location.href = 'form.html';
+    });
     </script>
 
 </body>
