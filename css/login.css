@@ -113,6 +113,8 @@ body {
     }
   }
   .box-form .right h5 {
+    text-align: left;
+    margin-right: 5em;
     font-size: 6vmax;
     line-height: 0;
     font-family: "Montserrat", sans-serif;
