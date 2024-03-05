@@ -1,11 +1,13 @@
-<!-- index.html -->
+<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>MMCM || PORTFOLIO</title>
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <title>Mapúa MCM Portal - Portfolio</title>
 </head>
 <body>
 
@@ -34,16 +36,32 @@
                     </form>
                 </div>
                 
-                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                <img src="../images/button.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
     
-
-
         <main>
             <section>
-                <h2>THIS IS PORTFOLIO.</h2>
-                <p>WAHAHAHHA MMCM</p>
+                <h2>Student Portfolios</h2>
+                
+                <!-- Add image containers with corresponding class -->
+                <div class="portfolio-image-container">
+                    <img src="../images/stephie/Mimi.jpg" alt="Portfolio Image 1">
+                    <p> HEEEELP </p>
+                </div>
+
+                <div class="portfolio-image-container">
+                    <img src="../images/stephie/pawrina sticker.png" alt="Portfolio Image 2">
+                    <p>HELP ME</p>
+                </div>
+
+                <div class="portfolio-image-container">
+                    <img src="../images/stephie/pink bbgurl.png" alt="Portfolio Image 2">
+                    <p>HELKPOPLP</p>
+                </div>
+
+                <!-- Add more image containers as needed -->
+
             </section>
         </main>
 
@@ -66,6 +84,10 @@
             // Show the content if logged in
             document.getElementById('content').style.display = 'block';
         }
+        document.getElementById('admin-logo').addEventListener('click', function () {
+        // Redirect to the form page
+        window.location.href = 'form.html';
+    });
     </script>
 
 </body>

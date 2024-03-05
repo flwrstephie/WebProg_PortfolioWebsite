@@ -1,0 +1,43 @@
+body {
+    text-align: center; /* Center the content within the body */
+}
+
+.portfolio-image-container {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.portfolio-image-container img {
+    max-width: 500px; /* Set the maximum width to 500px */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure images are in a single row */
+.photo-row {
+    white-space: nowrap; /* Prevent line breaks */
+    overflow-x: auto; /* Add horizontal scrollbar if needed */
+}
+
+
+main h2{
+    display: inline-block;
+    padding: 5px 60px;
+    font-size: 5vmax;
+    font-family: "Montserrat-Bold", sans-serif;
+    text-align: left;
+    margin: auto;
+    color: #fff;
+    background-color: #c14242;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+main p {
+    text-align: center;
+}
+main {
+    padding-bottom: 60px; /* Adjust the value based on your footer's height */
+}

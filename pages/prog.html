@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/program_styles.css">
     <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
-    <title>MMCM || PORTFOLIO</title>
+    <title>Mapúa MCM Portal - Programs</title>
 </head>
 
     <div id="content" style="display: none;">
@@ -34,7 +34,7 @@
                     </form>
                 </div>
                 
-                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                <img src="../images/button.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
     
@@ -108,6 +108,10 @@
             // Redirect to the login page if not logged in
             window.location.href = 'login.html';
         }
+        document.getElementById('admin-logo').addEventListener('click', function () {
+        // Redirect to the form page
+        window.location.href = 'form.html';
+    });
     </script>
 
 </body>

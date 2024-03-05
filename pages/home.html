@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>MMCM || PORTFOLIO</title>
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Mapúa MCM Portal</title>
 </head>
 <body>
 
@@ -34,20 +35,27 @@
                         <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
                     </form>
                 </div>
-                
-                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                <img src="../images/button.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
         
-
-        <main>
-            <section>
-                <img src = "../images/MMCM_Building.jpeg" class="school-bg" alt="BG">
-            </section>
+        <main class="home-main">
+            <div class="home-container">
+                <h1>Welcome, Mapúa-Malayans!</h1>
+                <section>
+                    <img src="../images/MMCM_Building.jpeg" class="school-bg" alt="BG">
+                    <div class="school-overlay"></div>
+                </section>
+                <h2>This is the official e-Portfolio for Mapúa MCM.</h2>
+                <button type="submit" class="submit-button id" id="submit-button">Submit Your Works Here</button>
+            </div>
         </main>
+        
+
+
 
         <footer>
-            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <p>&copy; 2024 Canama & Virtudazo. All rights reserved.</p>
         </footer>
 
     </div>
@@ -68,6 +76,10 @@
         document.getElementById('admin-logo').addEventListener('click', function () {
         // Redirect to the form page
         window.location.href = 'form.html';
+    });
+        document.getElementById('submit-button').addEventListener('click', function () {
+            // Redirect to the form page
+            window.location.href = 'form.html';
     });
     </script>
 

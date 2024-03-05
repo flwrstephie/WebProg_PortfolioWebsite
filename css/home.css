@@ -1,0 +1,15 @@
+.home-container h1 {
+    font-family: 'Montserrat-Bold';
+    font-size: 100px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-container h2 {
+    text-align: center;
+    font-weight: lighter;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

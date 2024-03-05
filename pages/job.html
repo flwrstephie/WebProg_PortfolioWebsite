@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>MMCM || PORTFOLIO</title>
+    <title>Mapúa MCM Portal - Hirings </title>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
                     </form>
                 </div>
                 
-                <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                <img src="../images/button.png" alt="Admin Logo" id="admin-logo">
             </div>
         </header>
     
@@ -64,6 +65,10 @@
             // Show the content if logged in
             document.getElementById('content').style.display = 'block';
         }
+        document.getElementById('admin-logo').addEventListener('click', function () {
+        // Redirect to the form page
+        window.location.href = 'form.html';
+    });
     </script>
 
 </body>

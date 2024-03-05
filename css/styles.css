@@ -23,7 +23,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #eee;
+    background-color: #ffffff;
 }
 
 .header-container {
@@ -46,7 +46,7 @@ header {
 
 .navbar li {
     display: inline;
-    margin-right: 10px;
+    margin-right: auto;
 }
 
 .navbar a {
@@ -76,7 +76,7 @@ header {
 .searchbutton {
     font-size: 22px;
     padding: 8px 10px;
-    background-color: #4c4eaf;
+    background-color: #1f37b0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -84,6 +84,7 @@ header {
 }
 
 .search {
+    font-family: 'Montserrat-Regular', sans-serif;
     position: absolute;
     left: 0;
     outline: none;
@@ -139,18 +140,21 @@ header {
     padding: 0 0 0 16px;
 }
 
-
 #admin-logo {
-    width: 35px;
+    padding: 5px;
+    width: 41px;
     height: auto;
     margin-left: 10px;
     margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    box-sizing: content-box; /* Ensure padding is included in the width */
 }
-
 
 nav {
     font-family: 'Montserrat-Bold' ;
-    background-color: #eee;
+    background-color: #ffffff;
     padding: 10px;
 }
 
@@ -182,11 +186,8 @@ nav a:hover {
     color: #3255ff;
 }
 
-main {
-    padding: 20px;
-}
-
 .school-bg {
+    display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
@@ -194,9 +195,40 @@ main {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    overflow: hidden; /* Ensure the overlay stays within the boundaries of .school-bg */
+}
+
+.school-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
+.submit-button {
+    width: auto;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 35px; /* Adjust padding as needed */
+    border-radius: 50px;
+    position: relative;
+    border: 0;
+    outline: 0;
+    background-color: #e50019;
+    font-family: 'Montserrat-Bold', sans-serif;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    margin-top: 100px;
+    display: block; /* Make it a block-level element */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button:hover {
+    background-color: #3a7e3b;
+}
+
+
 
 footer {
     background-color: #333;
@@ -205,45 +237,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Styles for the left-aligned form */
-.left-column {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-right: 1px solid #ccc;
-}
-
-.left-column form {
-    display: flex;
-    flex-direction: column;
-}
-
-.left-column label {
-    margin-bottom: 10px;
-}
-
-.left-column input {
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.left-column .submit-button {
-    font-family: 'Montserrat-Bold';
-    padding: 8px 15px;
-    background-color: #4c4eaf;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.left-column .submit-button:hover {
-    background-color: #c14242;
+    z-index: 999; /* Adjust the z-index as needed */
 }

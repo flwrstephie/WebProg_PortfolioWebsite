@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../images/MMCM_Logo_noname.png">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/forms.css">
-    <title>Your Profile</title>
+    <title>Mapúa MCM Portal - Upload</title>
     <body>
 
         <!-- Your website content will be hidden initially -->
@@ -35,32 +35,41 @@
                         </form>
                     </div>
                     
-                    <img src="../images/user.png" alt="Admin Logo" id="admin-logo">
+                    <img src="../images/button.png" alt="Admin Logo" id="admin-logo">
                 </div>
             </header>
         
     
             <main>
-                <h5>Your Profile</h5>
+                <h5>Upload</h5>
                 <section>
                     <form class="box-form">
                         <div class="right">
                             <div class="inputs">
                                 <div class="input-group">
                                     <label for="firstName">First Name:</label>
-                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" required>
                                 </div>
                                 <div class="input-group">
                                     <label for="lastName">Last Name:</label>
-                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" required>
                                 </div>
                                 <div class="input-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                    <label for="studentID">Student ID:</label>
+                                    <input type="text" id="studentID" name="studentID" placeholder="Enter your Student ID" pattern="\d{10}" required>
                                 </div>
+                                
                                 <div class="input-group">
                                     <label for="password">Password:</label>
-                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="uploadPicture">Upload your file:</label>
+                                    <div class="file-input-container">
+                                        <input type="file" id="profilePicture" name="profilePicture" accept=".jpg, .jpeg, .png" style="display: none;">
+                                        <button type="button" onclick="document.getElementById('profilePicture').click()" class="file-upload-button">Choose File</button>
+                                        <span id="selectedFileName">No file selected</span>
+                                    </div>
                                 </div>
                             </div>
                             <button type="submit" class="submit-button">Submit</button>
