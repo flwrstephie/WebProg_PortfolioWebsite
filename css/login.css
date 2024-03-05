@@ -1,6 +1,17 @@
+
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -46,6 +57,7 @@ body {
     justify-content: space-between;
     box-shadow: 0 0 20px 6px #090b6f85;
   }
+  
   @media (max-width: 980px) {
     .box-form {
       flex-flow: wrap;
@@ -80,14 +92,15 @@ body {
   .box-form .left .overlay h1 {
     font-size: 4.5vmax;
     line-height: 1;
-    font-weight: 900;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat-ExtraBold";
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);;
   }
-  .box-form .left .overlay span p {
+  
+  .box-form .left .overlay p {
+    font-family: "Montserrat-Regular";
     margin-top: 30px;
-    font-weight: 900;
   }
   .box-form .left .overlay span a {
     background: #3b5998;
@@ -117,7 +130,7 @@ body {
     margin-right: 5em;
     font-size: 6vmax;
     line-height: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat-Bold", sans-serif;
   }
   .box-form .right h6{
     font-size: 1vmax;
@@ -132,6 +145,7 @@ body {
     overflow: hidden;
   }
   .box-form .right input {
+    font-family: "Montserrat-Regular",sans-serif;
     width: 100%;
     padding: 10px;
     margin-top: 25px;
@@ -147,6 +161,7 @@ body {
 
 
 .box-form .right button {
+    font-family: "Montserrat-Bold";
     width: 100%; /* Set the width to 100% */
     margin-top: 25px; /* Adjust margin if needed */
     color: #fff;
