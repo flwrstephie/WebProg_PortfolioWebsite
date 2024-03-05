@@ -1,0 +1,100 @@
+/* myprofile.css */
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile container styles (unchanged) */
+.profile-container {
+    position: relative;
+    flex: auto;
+    max-width: calc(33.33% - 60px); /* Adjust the percentage and gap as needed */
+    margin: 0 10px 20px 50px; /* Adjust margin as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px; /* Add padding as needed */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.profile-image {
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    overflow: hidden; /* Hide any content exceeding the max dimensions */
+}
+
+.profile-details {
+    text-align: left; /* Align details to the left */
+}
+
+.profile-details p {
+    margin: 8px 0; /* Adjust vertical spacing for details */
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: calc(50% - 40px);
+}
+
+/* Ensure both containers are side by side */
+.profile-container,
+.photo-gallery {
+    flex-basis: calc(33.33% - 60px); /* Adjust the percentage and gap as needed */
+}
+
+/* Adjust styling for the photo gallery images as needed */
+.photo-gallery .portfolio-image-container img {
+    max-width: 100%; /* Ensure images take full width of the container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+main h2 {
+    display: inline-block;
+    padding: 5px 60px;
+    font-size: 5vmax;
+    font-family: "Montserrat-Bold", sans-serif;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.port-image {
+    position: relative;
+    background-image: url('../images/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.port-image p {
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px ;
+}
