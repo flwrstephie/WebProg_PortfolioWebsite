@@ -1,26 +1,21 @@
-/* myprofile.css */
-.main-content {
-    display: flex;
-    justify-content: center;
-}
-
-/* Profile container styles (unchanged) */
+/* Profile Container Styles */
 .profile-container {
     position: relative;
-    flex: auto;
-    max-width: calc(33.33% - 60px); /* Adjust the percentage and gap as needed */
-    margin: 0 10px 20px 50px; /* Adjust margin as needed */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 15px; /* Add padding as needed */
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    flex: 1; /* Take up remaining space */
+    max-width: 25%; /* Adjust profile container width */
+    margin-right: 20px; /* Add some spacing between profile and sample works */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Hide any content exceeding the container */
 }
 
 .profile-image {
-    max-width: 500px;
-    max-height: 500px;
-    margin-bottom: 20px; /* Adjust spacing as needed */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 300px; /* Limit the height of the profile image */
+    margin-bottom: 20px; /* Add spacing between image and details */
     overflow: hidden; /* Hide any content exceeding the max dimensions */
 }
 
@@ -29,46 +24,70 @@
 }
 
 .profile-details p {
-    margin: 8px 0; /* Adjust vertical spacing for details */
+    margin: 8px 0; /* Add vertical margin for spacing */
 }
+
+/* Sample Works Container Styles */
 .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-basis: calc(50% - 40px);
+    flex: 3; /* Take up remaining space */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-/* Ensure both containers are side by side */
-.profile-container,
-.photo-gallery {
-    flex-basis: calc(33.33% - 60px); /* Adjust the percentage and gap as needed */
+.portfolio-container {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow: hidden; /* Hide any content exceeding the container */
 }
 
-/* Adjust styling for the photo gallery images as needed */
-.photo-gallery .portfolio-image-container img {
-    max-width: 100%; /* Ensure images take full width of the container */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.portfolio-item {
+    flex-basis: calc(33.33% - 20px); /* Adjust width of items */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+    overflow: hidden; /* Hide any content exceeding the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
+.portfolio-image-container img {
+    width: 100%; /* Ensure images take full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.portfolio-details {
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.portfolio-details h3 {
+    margin-top: 0; /* Remove default margin for heading */
+}
+
+.portfolio-details p {
+    margin-bottom: 0; /* Remove default margin for paragraph */
+}
+
+/* Other Styles */
 .main-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
+    padding: 30px 90px 5px 90px;
 }
 
 main h2 {
-    display: inline-block;
-    padding: 5px 60px;
-    font-size: 5vmax;
+    display: block; /* Change display property to block */
+    padding: 10px 0; /* Add padding */
+    font-size: 24px; /* Adjust font size */
     font-family: "Montserrat-Bold", sans-serif;
     text-align: center;
     margin: auto;
-    color: #fff;
+    color: #333; /* Change text color */
     width: 100%;
     box-sizing: border-box; /* Ensures padding is included in the width */
 }
@@ -80,7 +99,8 @@ main h2 {
     background-position: center;
     padding: 50px 0; /* Adjust padding as needed */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjust margin to create space below the image */
+    margin-top: 20px; /* Adjust margin to create space above the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -89,12 +109,30 @@ main h2 {
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+
+.background-image {
+    position: relative;
+    background-image: url('../images/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adjust padding as needed */
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.background-image h1 {
+    display: inline-block;
+    font-size: 5vmax;
+    font-family: "Montserrat-Bold", sans-serif;
+    text-align: center;
+    margin: auto;
+    color: #fff;
     width: 100%;
-    padding: 10px ;
+    box-sizing: border-box; 
+}
+
+.background-image p {
+    font-family: "Montserrat-Regular", sans-serif;
+    color: white;
 }
